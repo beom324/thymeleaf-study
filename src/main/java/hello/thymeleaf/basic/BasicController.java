@@ -31,7 +31,7 @@ public class BasicController {
     public String variable(Model model){
         User userA = new User("userA",10);
         User userB = new User("userB",20);
-g
+
         List<User> list = new ArrayList<>();
         list.add(userA);
         list.add(userB);
@@ -43,6 +43,8 @@ g
         model.addAttribute("user",userA);
         model.addAttribute("users",list);
         model.addAttribute("userMap",map);
+
+        return "basic/variable";
     }
 
     //내부에서 사용할 객체
