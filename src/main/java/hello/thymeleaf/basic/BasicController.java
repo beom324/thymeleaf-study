@@ -89,6 +89,11 @@ public class BasicController {
         return "basic/operation";
     }
 
+    @GetMapping("/attribute")
+    public String attribute(Model model){
+        return "basic/attribute";
+    }
+
 
     //내부에서 사용할 객체
     @Data
