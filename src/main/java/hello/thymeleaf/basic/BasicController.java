@@ -82,6 +82,13 @@ public class BasicController {
         return "basic/literal";
     }
 
+    @GetMapping("/operation")
+    public String operation(Model model){
+        model.addAttribute("nulldata",null);
+        model.addAttribute("data","Spring");
+        return "basic/operation";
+    }
+
 
     //내부에서 사용할 객체
     @Data
